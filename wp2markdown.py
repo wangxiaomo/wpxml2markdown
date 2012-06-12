@@ -56,6 +56,7 @@ class WPDocumentHandler(handler.ContentHandler):
         if self.in_item == True:
             if name == 'title':
                 self.items['title'] = self.value.strip()
+                self.items['title'] = re.subn(r' ', r'_', self.items['title'])[0]
             elif name == 'pubDate':
                 self.items['date'] = self.value.strip()
             elif name == 'content:encoded':
