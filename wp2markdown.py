@@ -1,7 +1,4 @@
 #-*- coding: utf-8 -*-
-import sys
-import re
-import os
 
 """ wp documents to markdown file      """
 """ author: xiaomo(wxm4ever@gmail.com) """
